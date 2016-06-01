@@ -8,76 +8,36 @@
 </head>
 
 <body>
+
 <h2>Element &lt;<a name="ASAPRatio_pvalue">ASAPRatio_pvalue</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
-        <td class="zero">Results of ASAPRatio pvalue analysis (adjusting ASAPRatio ratios for offset of dataset, and
-            determining whether ratios are significantly different from chance values originating from 1:1 proteins
+        <td class="zero">Results of ASAPRatio pvalue analysis (adjusting ASAPRatio ratios for offset of dataset, and determining whether ratios are significantly different from chance values originating from 1:1 proteins
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>adj_ratio_mean</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>Ratio adjusted for dataset mean value</td>
-                </tr>
-                <tr>
-                    <td>adj_ratio_standard_dev</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>Error adjusted for dataset mean value</td>
-                </tr>
-                <tr>
-                    <td>heavy2light_adj_ratio_mean</td>
-                    <td>xs:double</td>
-                    <td>&nbsp;</td>
-                    <td>Heavy2light ratio adjusted for dataset mean value</td>
-                </tr>
-                <tr>
-                    <td>heavy2light_adj_ratio_standard_dev</td>
-                    <td>xs:double</td>
-                    <td>&nbsp;</td>
-                    <td>Heavy2light error adjusted for dataset mean value</td>
-                </tr>
-                <tr>
-                    <td>pvalue</td>
-                    <td>xs:double</td>
-                    <td>&nbsp;</td>
-                    <td>pvalue (probability of ratio due by chance to 1:1 protein)</td>
-                </tr>
-                <tr>
-                    <td>decimal_pvalue</td>
-                    <td>xs:double</td>
-                    <td>&nbsp;</td>
-                    <td>decimal representation of pvalue</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>adj_ratio_mean</td><td>xs:double</td><td>required</td><td>Ratio adjusted for dataset mean value</td></tr>
+            <tr><td>adj_ratio_standard_dev</td><td>xs:double</td><td>required</td><td>Error adjusted for dataset mean value</td></tr>
+            <tr><td>heavy2light_adj_ratio_mean</td><td>xs:double</td><td>&nbsp;</td><td>Heavy2light ratio adjusted for dataset mean value</td></tr>
+            <tr><td>heavy2light_adj_ratio_standard_dev</td><td>xs:double</td><td>&nbsp;</td><td>Heavy2light error adjusted for dataset mean value</td></tr>
+            <tr><td>pvalue</td><td>xs:double</td><td>&nbsp;</td><td>pvalue (probability of ratio due by chance to 1:1 protein)</td></tr>
+            <tr><td>decimal_pvalue</td><td>xs:double</td><td>&nbsp;</td><td>decimal representation of pvalue</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Graphical Context:</b></td>
-        <td class="zero"><img width="530" src="img/ASAPRatio_pvalue.png">
-            <br><img width="530" src="img/ASAPRatiopvalue.png">
+        <td class="zero"><img width="530" src="img/ASAPRatio_pvalue.png"><br><img width="530" src="img/ASAPRatiopvalue.png">
         </td>
     </tr>
     <tr>
@@ -86,106 +46,42 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="ASAPRatio">ASAPRatio</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">Results of ASAPRatio quantitation of protein
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>ratio_mean</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>ratio_standard_dev</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>ratio_number_peptides</td>
-                    <td>xs:nonNegativeInteger</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>heavy2light_ratio_mean</td>
-                    <td>xs:double</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>heavy2light_ratio_standard_dev</td>
-                    <td>xs:double</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>description</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>status</td>
-                    <td>xs:xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>peptide_inds</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>ratio_mean</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>ratio_standard_dev</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>ratio_number_peptides</td><td>xs:nonNegativeInteger</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>heavy2light_ratio_mean</td><td>xs:double</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>heavy2light_ratio_standard_dev</td><td>xs:double</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>description</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>status</td><td>xs:xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>peptide_inds</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Subelement Name</th>
-                    <th>min</th>
-                    <th>max</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td><a href="#ASAP_Seq">ASAP_Seq</a></td>
-                    <td>0</td>
-                    <td>unlim</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Subelement Name</th><th>min</th><th>max</th><th>Definition</th></tr>
+            <tr><td><a href="#ASAP_Seq">ASAP_Seq</a></td><td>0</td><td>unlim</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Graphical Context:</b></td>
-        <td class="zero"><img width="530" src="img/ASAPRatio.png">
-            <br><img width="530" src="img/ASAPRatio Java.png">
+        <td class="zero"><img width="530" src="img/ASAPRatio.png"><br><img width="530" src="img/ASAPRatio Java.png">
         </td>
     </tr>
     <tr>
@@ -194,84 +90,38 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="protein_summary">protein_summary</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>summary_xml</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>summary_xml</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Subelement Name</th>
-                    <th>min</th>
-                    <th>max</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td><a href="#protein_summary_header">protein_summary_header</a></td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>Wildcard for summary info customized for a particular analysis used to infer protein
-                        identifications
-                    </td>
-                </tr>
-                <tr>
-                    <td><a href="#analysis_summary">analysis_summary</a></td>
-                    <td>0</td>
-                    <td>unlim</td>
-                    <td>time of analysis</td>
-                </tr>
-                <tr>
-                    <td><a href="#dataset_derivation">dataset_derivation</a></td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>Source and filtering criteria used to generate dataset</td>
-                </tr>
-                <tr>
-                    <td><a href="#protein_group">protein_group</a></td>
-                    <td>1</td>
-                    <td>unlim</td>
-                    <td>wildcard to be substituted with element storing analysis-specific result info</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Subelement Name</th><th>min</th><th>max</th><th>Definition</th></tr>
+            <tr><td><a href="#protein_summary_header">protein_summary_header</a></td><td>1</td><td>1</td><td>Wildcard for summary info customized for a particular analysis used to infer protein identifications</td></tr>
+            <tr><td><a href="#analysis_summary">analysis_summary</a></td><td>0</td><td>unlim</td><td>time of analysis</td></tr>
+            <tr><td><a href="#dataset_derivation">dataset_derivation</a></td><td>1</td><td>1</td><td>Source and filtering criteria used to generate dataset</td></tr>
+            <tr><td><a href="#protein_group">protein_group</a></td><td>1</td><td>unlim</td><td>wildcard to be substituted with element storing analysis-specific result info</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Graphical Context:</b></td>
-        <td class="zero"><img width="530" src="img/protein_summary.png">
-            <br><img width="530" src="img/Proteinsummary.png">
+        <td class="zero"><img width="530" src="img/protein_summary.png"><br><img width="530" src="img/Proteinsummary.png">
         </td>
     </tr>
     <tr>
@@ -288,119 +138,44 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="proteinprophet_details">proteinprophet_details</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">ProteinProphet analysis details
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>occam_flag</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>whether or not occams razor was used to apportion peptides corresponding to multiple proteins
-                    </td>
-                </tr>
-                <tr>
-                    <td>groups_flag</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>whether or not related proteins are organized together in common protein groups</td>
-                </tr>
-                <tr>
-                    <td>degen_flag</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>whether or not all proteins corresponding to each identified peptide were used in analysis</td>
-                </tr>
-                <tr>
-                    <td>nsp_flag</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>whether or not peptide probabilities were adjusted for estimated number of sibling peptides</td>
-                </tr>
-                <tr>
-                    <td>initial_peptide_wt_iters</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>proteinprophet number of initial iterations to compute peptide weights</td>
-                </tr>
-                <tr>
-                    <td>nsp_distribution_iters</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>proteinprophet number of interations used to compute nsp distributions</td>
-                </tr>
-                <tr>
-                    <td>final_peptide_wt_iters</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>proteinprophet number of final interations used to compute final peptide weights</td>
-                </tr>
-                <tr>
-                    <td>run_options</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>special run options</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>occam_flag</td><td>xs:string</td><td>required</td><td>whether or not occams razor was used to apportion peptides corresponding to multiple proteins</td></tr>
+            <tr><td>groups_flag</td><td>xs:string</td><td>required</td><td>whether or not related proteins are organized together in common protein groups</td></tr>
+            <tr><td>degen_flag</td><td>xs:string</td><td>required</td><td>whether or not all proteins corresponding to each identified peptide were used in analysis</td></tr>
+            <tr><td>nsp_flag</td><td>xs:string</td><td>required</td><td>whether or not peptide probabilities were adjusted for estimated number of sibling peptides</td></tr>
+            <tr><td>initial_peptide_wt_iters</td><td>xs:string</td><td>required</td><td>proteinprophet number of initial iterations to compute peptide weights</td></tr>
+            <tr><td>nsp_distribution_iters</td><td>xs:string</td><td>required</td><td>proteinprophet number of interations used to compute nsp distributions</td></tr>
+            <tr><td>final_peptide_wt_iters</td><td>xs:string</td><td>required</td><td>proteinprophet number of final interations used to compute final peptide weights</td></tr>
+            <tr><td>run_options</td><td>xs:string</td><td>&nbsp;</td><td>special run options</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Subelement Name</th>
-                    <th>min</th>
-                    <th>max</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td><a href="#nsp_information">nsp_information</a></td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>learned distributions of estimated number of sibling peptides</td>
-                </tr>
-                <tr>
-                    <td><a href="#ni_information">ni_information</a></td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>learned distributions of estimated number of peptide instances ("number of instances")</td>
-                </tr>
-                <tr>
-                    <td><a href="#protein_summary_data_filter">protein_summary_data_filter</a></td>
-                    <td>1</td>
-                    <td>unlim</td>
-                    <td>predicted error/sensitivity for filtering at minimum probability</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Subelement Name</th><th>min</th><th>max</th><th>Definition</th></tr>
+            <tr><td><a href="#nsp_information">nsp_information</a></td><td>1</td><td>1</td><td>learned distributions of estimated number of sibling peptides</td></tr>
+            <tr><td><a href="#ni_information">ni_information</a></td><td>1</td><td>1</td><td>learned distributions of estimated number of peptide instances ("number of instances")</td></tr>
+            <tr><td><a href="#protein_summary_data_filter">protein_summary_data_filter</a></td><td>1</td><td>unlim</td><td>predicted error/sensitivity for filtering at minimum probability</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Graphical Context:</b></td>
-        <td class="zero"><img width="530" src="img/proteinprophet_details.png">
-            <br><img width="530" src="img/Proteinprophetdetails.png">
+        <td class="zero"><img width="530" src="img/proteinprophet_details.png"><br><img width="530" src="img/Proteinprophetdetails.png">
         </td>
     </tr>
     <tr>
@@ -415,14 +190,12 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="XPress_analysis_summary">XPress_analysis_summary</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
@@ -434,53 +207,23 @@
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>min_peptide_probability</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>min_peptide_weight</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>min_protein_probability</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>reference_isotope</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>min_peptide_probability</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>min_peptide_weight</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>min_protein_probability</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>reference_isotope</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Graphical Context:</b></td>
-        <td class="zero"><img width="530" src="img/XPress_analysis_summary.png">
-            <br><img width="530" src="img/XPressanalysissummary.png">
+        <td class="zero"><img width="530" src="img/XPress_analysis_summary.png"><br><img width="530" src="img/XPressanalysissummary.png">
         </td>
     </tr>
     <tr>
@@ -489,14 +232,12 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="ASAP_prot_analysis_summary">ASAP_prot_analysis_summary</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
@@ -508,65 +249,25 @@
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>version</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>binary_ref_files</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>min_peptide_probability</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>min_peptide_weight</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>min_protein_probability</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>reference_isotope</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>version</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>binary_ref_files</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>min_peptide_probability</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>min_peptide_weight</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>min_protein_probability</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>reference_isotope</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Graphical Context:</b></td>
-        <td class="zero"><img width="530" src="img/ASAP_prot_analysis_summary.png">
-            <br><img width="530" src="img/ASAPprotanalysissummary.png">
+        <td class="zero"><img width="530" src="img/ASAP_prot_analysis_summary.png"><br><img width="530" src="img/ASAPprotanalysissummary.png">
         </td>
     </tr>
     <tr>
@@ -575,85 +276,38 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="ASAP_pvalue_analysis_summary">ASAP_pvalue_analysis_summary</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>asapratio_id</td>
-                    <td>xs:nonNegativeInteger</td>
-                    <td>&nbsp;</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>background_ratio_mean</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>background_ratio_stdev</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>background_fitting_error</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>analysis_distribution_file</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>full_analysis_distr_file</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>asap_prot_id</td>
-                    <td>xs:nonNegativeInteger</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>asapratio_id</td><td>xs:nonNegativeInteger</td><td>&nbsp;</td><td></td></tr>
+            <tr><td>background_ratio_mean</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>background_ratio_stdev</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>background_fitting_error</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>analysis_distribution_file</td><td>xs:string</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>full_analysis_distr_file</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>asap_prot_id</td><td>xs:nonNegativeInteger</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Graphical Context:</b></td>
-        <td class="zero"><img width="530" src="img/ASAP_pvalue_analysis_summary.png">
-            <br><img width="530" src="img/ASAPpvalueanalysissummary.png">
+        <td class="zero"><img width="530" src="img/ASAP_pvalue_analysis_summary.png"><br><img width="530" src="img/ASAPpvalueanalysissummary.png">
         </td>
     </tr>
     <tr>
@@ -662,64 +316,35 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="libra_result">libra_result</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>number</td>
-                    <td>xs:nonNegativeInteger</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>number</td><td>xs:nonNegativeInteger</td><td>required</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Subelement Name</th>
-                    <th>min</th>
-                    <th>max</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td><a href="#intensity">intensity</a></td>
-                    <td>1</td>
-                    <td>unlim</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Subelement Name</th><th>min</th><th>max</th><th>Definition</th></tr>
+            <tr><td><a href="#intensity">intensity</a></td><td>1</td><td>unlim</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Graphical Context:</b></td>
-        <td class="zero"><img width="530" src="img/libra_result.png">
-            <br><img width="530" src="img/Libraresult.png">
+        <td class="zero"><img width="530" src="img/libra_result.png"><br><img width="530" src="img/Libraresult.png">
         </td>
     </tr>
     <tr>
@@ -728,112 +353,43 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="libra_summary">libra_summary</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>mass_tolerance</td>
-                    <td>xs:float</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>centroiding_preference</td>
-                    <td>xs:int</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>normalization</td>
-                    <td>xs:int</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>output_type</td>
-                    <td>xs:int</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>channel_code</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>min_pep_prob</td>
-                    <td>xs:float</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>min_pep_wt</td>
-                    <td>xs:float</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>min_prot_prob</td>
-                    <td>xs:float</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>mass_tolerance</td><td>xs:float</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>centroiding_preference</td><td>xs:int</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>normalization</td><td>xs:int</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>output_type</td><td>xs:int</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>channel_code</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>min_pep_prob</td><td>xs:float</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>min_pep_wt</td><td>xs:float</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>min_prot_prob</td><td>xs:float</td><td>required</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Subelement Name</th>
-                    <th>min</th>
-                    <th>max</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td><a href="#fragment_masses">fragment_masses</a></td>
-                    <td>1</td>
-                    <td>unlim</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td><a href="#isotopic_contributions">isotopic_contributions</a></td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Subelement Name</th><th>min</th><th>max</th><th>Definition</th></tr>
+            <tr><td><a href="#fragment_masses">fragment_masses</a></td><td>1</td><td>unlim</td><td>&nbsp;</td></tr>
+            <tr><td><a href="#isotopic_contributions">isotopic_contributions</a></td><td>1</td><td>1</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Graphical Context:</b></td>
-        <td class="zero"><img width="530" src="img/libra_summary.png">
-            <br><img width="530" src="img/Librasummary.png">
+        <td class="zero"><img width="530" src="img/libra_summary.png"><br><img width="530" src="img/Librasummary.png">
         </td>
     </tr>
     <tr>
@@ -842,106 +398,38 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="ASAP_Seq">ASAP_Seq</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>status</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>include</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>datanum</td>
-                    <td>xs:nonNegativeInteger</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>ratio_mean</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>ratio_standard_dev</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>heavy2light_ratio_mean</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>heavy2light_ratio_standard_dev</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>weight</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>light_sequence</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>status</td><td>xs:string</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>include</td><td>xs:string</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>datanum</td><td>xs:nonNegativeInteger</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>ratio_mean</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>ratio_standard_dev</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>heavy2light_ratio_mean</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>heavy2light_ratio_standard_dev</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>weight</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>light_sequence</td><td>xs:string</td><td>required</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Subelement Name</th>
-                    <th>min</th>
-                    <th>max</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td><a href="#ASAP_Peak">ASAP_Peak</a></td>
-                    <td>1</td>
-                    <td>unlim</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Subelement Name</th><th>min</th><th>max</th><th>Definition</th></tr>
+            <tr><td><a href="#ASAP_Peak">ASAP_Peak</a></td><td>1</td><td>unlim</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
@@ -955,106 +443,38 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="ASAP_Peak">ASAP_Peak</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>status</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>include</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>datanum</td>
-                    <td>xs:nonNegativeInteger</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>ratio_mean</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>ratio_standard_dev</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>heavy2light_ratio_mean</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>heavy2light_ratio_standard_dev</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>weight</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>peptide_binary_ind</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>status</td><td>xs:string</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>include</td><td>xs:string</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>datanum</td><td>xs:nonNegativeInteger</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>ratio_mean</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>ratio_standard_dev</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>heavy2light_ratio_mean</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>heavy2light_ratio_standard_dev</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>weight</td><td>xs:double</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>peptide_binary_ind</td><td>xs:string</td><td>required</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Subelement Name</th>
-                    <th>min</th>
-                    <th>max</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td><a href="#ASAP_Dta">ASAP_Dta</a></td>
-                    <td>1</td>
-                    <td>unlim</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Subelement Name</th><th>min</th><th>max</th><th>Definition</th></tr>
+            <tr><td><a href="#ASAP_Dta">ASAP_Dta</a></td><td>1</td><td>unlim</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
@@ -1068,50 +488,29 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="ASAP_Dta">ASAP_Dta</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>peptide_index</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>include</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>peptide_index</td><td>xs:string</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>include</td><td>xs:string</td><td>required</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
         <td class="zero">none
-    </tbody>
-</table>
+    </tbody></table>
 </td>
 </tr>
 <tr>
@@ -1120,166 +519,48 @@
 </pre>
     </td>
 </tr>
-</tbody>
-</table>
-<br>
+</tbody></table><br>
 
 <h2>Element &lt;<a name="protein_summary_header">protein_summary_header</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>reference_database</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>full path database name</td>
-                </tr>
-                <tr>
-                    <td>win-cyg_reference_database</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>windows full path database</td>
-                </tr>
-                <tr>
-                    <td>residue_substitution_list</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>residues considered equivalent when comparing peptides</td>
-                </tr>
-                <tr>
-                    <td>organism</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>sample organism (used for annotation purposes)</td>
-                </tr>
-                <tr>
-                    <td>source_files</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>input pepXML files</td>
-                </tr>
-                <tr>
-                    <td>source_files_alt</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>win-cyg_source_files</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>windows pepXML file names</td>
-                </tr>
-                <tr>
-                    <td>source_file_xtn</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>file type (if not pepXML)</td>
-                </tr>
-                <tr>
-                    <td>min_peptide_probability</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>minimum adjusted peptide probability contributing to protein probability</td>
-                </tr>
-                <tr>
-                    <td>min_peptide_weight</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>minimum peptide weight contributing to protein probability</td>
-                </tr>
-                <tr>
-                    <td>num_predicted_correct_prots</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>total number of predicted correct protein ids (sum of probabilities)</td>
-                </tr>
-                <tr>
-                    <td>num_input_1_spectra</td>
-                    <td>xs:integer</td>
-                    <td>required</td>
-                    <td>number of spectra from 1+ precursor ions</td>
-                </tr>
-                <tr>
-                    <td>num_input_2_spectra</td>
-                    <td>xs:integer</td>
-                    <td>required</td>
-                    <td>number of spectra from 2+ precursor ions</td>
-                </tr>
-                <tr>
-                    <td>num_input_3_spectra</td>
-                    <td>xs:integer</td>
-                    <td>required</td>
-                    <td>number of spectra from 3+ precursor ions</td>
-                </tr>
-                <tr>
-                    <td>num_input_4_spectra</td>
-                    <td>xs:integer</td>
-                    <td>required</td>
-                    <td>number of spectra from 4+ precursor ions</td>
-                </tr>
-                <tr>
-                    <td>num_input_5_spectra</td>
-                    <td>xs:integer</td>
-                    <td>required</td>
-                    <td>number of spectra from 5+ precursor ions</td>
-                </tr>
-                <tr>
-                    <td>initial_min_peptide_prob</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>minimum initial peptide probability to contribute to analysis</td>
-                </tr>
-                <tr>
-                    <td>total_no_spectrum_ids</td>
-                    <td>xs:double</td>
-                    <td>&nbsp;</td>
-                    <td>total estimated number of correct peptide assignments in dataset</td>
-                </tr>
-                <tr>
-                    <td>sample_enzyme</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>enzyme applied to sample prior to MS/MS</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>reference_database</td><td>xs:string</td><td>required</td><td>full path database name</td></tr>
+            <tr><td>win-cyg_reference_database</td><td>xs:string</td><td>&nbsp;</td><td>windows full path database</td></tr>
+            <tr><td>residue_substitution_list</td><td>xs:string</td><td>&nbsp;</td><td>residues considered equivalent when comparing peptides</td></tr>
+            <tr><td>organism</td><td>xs:string</td><td>&nbsp;</td><td>sample organism (used for annotation purposes)</td></tr>
+            <tr><td>source_files</td><td>xs:string</td><td>required</td><td>input pepXML files</td></tr>
+            <tr><td>source_files_alt</td><td>xs:string</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>win-cyg_source_files</td><td>xs:string</td><td>&nbsp;</td><td>windows pepXML file names</td></tr>
+            <tr><td>source_file_xtn</td><td>xs:string</td><td>&nbsp;</td><td>file type (if not pepXML)</td></tr>
+            <tr><td>min_peptide_probability</td><td>xs:double</td><td>required</td><td>minimum adjusted peptide probability contributing to protein probability</td></tr>
+            <tr><td>min_peptide_weight</td><td>xs:double</td><td>required</td><td>minimum peptide weight contributing to protein probability</td></tr>
+            <tr><td>num_predicted_correct_prots</td><td>xs:double</td><td>required</td><td>total number of predicted correct protein ids (sum of probabilities)</td></tr>
+            <tr><td>num_input_1_spectra</td><td>xs:integer</td><td>required</td><td>number of spectra from 1+ precursor ions</td></tr>
+            <tr><td>num_input_2_spectra</td><td>xs:integer</td><td>required</td><td>number of spectra from 2+ precursor ions</td></tr>
+            <tr><td>num_input_3_spectra</td><td>xs:integer</td><td>required</td><td>number of spectra from 3+ precursor ions</td></tr>
+            <tr><td>num_input_4_spectra</td><td>xs:integer</td><td>required</td><td>number of spectra from 4+ precursor ions</td></tr>
+            <tr><td>num_input_5_spectra</td><td>xs:integer</td><td>required</td><td>number of spectra from 5+ precursor ions</td></tr>
+            <tr><td>initial_min_peptide_prob</td><td>xs:double</td><td>required</td><td>minimum initial peptide probability to contribute to analysis</td></tr>
+            <tr><td>total_no_spectrum_ids</td><td>xs:double</td><td>&nbsp;</td><td>total estimated number of correct peptide assignments in dataset</td></tr>
+            <tr><td>sample_enzyme</td><td>xs:string</td><td>required</td><td>enzyme applied to sample prior to MS/MS</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Subelement Name</th>
-                    <th>min</th>
-                    <th>max</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td><a href="#program_details">program_details</a></td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Subelement Name</th><th>min</th><th>max</th><th>Definition</th></tr>
+            <tr><td><a href="#program_details">program_details</a></td><td>1</td><td>1</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
@@ -1300,55 +581,29 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="program_details">program_details</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>analysis</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>Name of analysis used for protein identifications</td>
-                </tr>
-                <tr>
-                    <td>time</td>
-                    <td>xs:dateTime</td>
-                    <td>required</td>
-                    <td>Time of analysis</td>
-                </tr>
-                <tr>
-                    <td>version</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>analysis</td><td>xs:string</td><td>required</td><td>Name of analysis used for protein identifications</td></tr>
+            <tr><td>time</td><td>xs:dateTime</td><td>required</td><td>Time of analysis</td></tr>
+            <tr><td>version</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
@@ -1367,55 +622,29 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="analysis_summary">analysis_summary</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>analysis</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>name of protein-level analysis</td>
-                </tr>
-                <tr>
-                    <td>time</td>
-                    <td>xs:dateTime</td>
-                    <td>required</td>
-                    <td>time of analysis</td>
-                </tr>
-                <tr>
-                    <td>id</td>
-                    <td>xs:nonNegativeInteger</td>
-                    <td>required</td>
-                    <td>unique id corresponding with analysis_result elements</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>analysis</td><td>xs:string</td><td>required</td><td>name of protein-level analysis</td></tr>
+            <tr><td>time</td><td>xs:dateTime</td><td>required</td><td>time of analysis</td></tr>
+            <tr><td>id</td><td>xs:nonNegativeInteger</td><td>required</td><td>unique id corresponding with analysis_result elements</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
@@ -1429,43 +658,27 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="dataset_derivation">dataset_derivation</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">Source and filtering criteria used to generate dataset
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>generation_no</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>number preceding filter generations</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>generation_no</td><td>xs:string</td><td>required</td><td>number preceding filter generations</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
@@ -1480,70 +693,32 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="protein_group">protein_group</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>group_number</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>index</td>
-                </tr>
-                <tr>
-                    <td>pseudo_name</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>probability</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>group probability (taking contributions from all group member proteins)</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>group_number</td><td>xs:string</td><td>required</td><td>index</td></tr>
+            <tr><td>pseudo_name</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>probability</td><td>xs:double</td><td>required</td><td>group probability (taking contributions from all group member proteins)</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Subelement Name</th>
-                    <th>min</th>
-                    <th>max</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td><a href="#protein">protein</a></td>
-                    <td>1</td>
-                    <td>unlim</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Subelement Name</th><th>min</th><th>max</th><th>Definition</th></tr>
+            <tr><td><a href="#protein">protein</a></td><td>1</td><td>unlim</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
@@ -1562,130 +737,42 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="protein">protein</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>protein_name</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>database protein name</td>
-                </tr>
-                <tr>
-                    <td>probability</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>confidence of protein id</td>
-                </tr>
-                <tr>
-                    <td>percent_coverage</td>
-                    <td>xs:double</td>
-                    <td>&nbsp;</td>
-                    <td>percent of protein sequence covered by corresponding peptides</td>
-                </tr>
-                <tr>
-                    <td>n_indistinguishable_proteins</td>
-                    <td>xs:integer</td>
-                    <td>required</td>
-                    <td>number of proteins with identical corresponding peptides</td>
-                </tr>
-                <tr>
-                    <td>unique_stripped_peptides</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>group_sibling_id</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>protein group id</td>
-                </tr>
-                <tr>
-                    <td>total_number_peptides</td>
-                    <td>xs:integer</td>
-                    <td>&nbsp;</td>
-                    <td>total number of corresponding peptides that contributed to protein probability</td>
-                </tr>
-                <tr>
-                    <td>subsuming_protein_entry</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>name of portein containing all corresponding peptides, and more</td>
-                </tr>
-                <tr>
-                    <td>pct_spectrum_ids</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>fraction of correct dataset peptide identifications corresponding to protein</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>protein_name</td><td>xs:string</td><td>required</td><td>database protein name</td></tr>
+            <tr><td>probability</td><td>xs:double</td><td>required</td><td>confidence of protein id</td></tr>
+            <tr><td>percent_coverage</td><td>xs:double</td><td>&nbsp;</td><td>percent of protein sequence covered by corresponding peptides</td></tr>
+            <tr><td>n_indistinguishable_proteins</td><td>xs:integer</td><td>required</td><td>number of proteins with identical corresponding peptides</td></tr>
+            <tr><td>unique_stripped_peptides</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>group_sibling_id</td><td>xs:string</td><td>required</td><td>protein group id</td></tr>
+            <tr><td>total_number_peptides</td><td>xs:integer</td><td>&nbsp;</td><td>total number of corresponding peptides that contributed to protein probability</td></tr>
+            <tr><td>subsuming_protein_entry</td><td>xs:string</td><td>&nbsp;</td><td>name of portein containing all corresponding peptides, and more</td></tr>
+            <tr><td>pct_spectrum_ids</td><td>xs:string</td><td>&nbsp;</td><td>fraction of correct dataset peptide identifications corresponding to protein</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Subelement Name</th>
-                    <th>min</th>
-                    <th>max</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td><a href="#parameter">parameter</a></td>
-                    <td>0</td>
-                    <td>unlim</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td><a href="#analysis_result">analysis_result</a></td>
-                    <td>0</td>
-                    <td>unlim</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td><a href="#annotation">annotation</a></td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td><a href="#indistinguishable_protein">indistinguishable_protein</a></td>
-                    <td>0</td>
-                    <td>unlim</td>
-                    <td>other protein sharing corresponding peptides</td>
-                </tr>
-                <tr>
-                    <td><a href="#peptide">peptide</a></td>
-                    <td>1</td>
-                    <td>unlim</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Subelement Name</th><th>min</th><th>max</th><th>Definition</th></tr>
+            <tr><td><a href="#parameter">parameter</a></td><td>0</td><td>unlim</td><td>&nbsp;</td></tr>
+            <tr><td><a href="#analysis_result">analysis_result</a></td><td>0</td><td>unlim</td><td>&nbsp;</td></tr>
+            <tr><td><a href="#annotation">annotation</a></td><td>1</td><td>1</td><td>&nbsp;</td></tr>
+            <tr><td><a href="#indistinguishable_protein">indistinguishable_protein</a></td><td>0</td><td>unlim</td><td>other protein sharing corresponding peptides</td></tr>
+            <tr><td><a href="#peptide">peptide</a></td><td>1</td><td>unlim</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
@@ -1703,49 +790,28 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="analysis_result">analysis_result</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>analysis</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>name of protein level analysis</td>
-                </tr>
-                <tr>
-                    <td>id</td>
-                    <td>xs:nonNegativeInteger</td>
-                    <td>&nbsp;</td>
-                    <td>nunique identifier to analysis_summary element</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>analysis</td><td>xs:string</td><td>required</td><td>name of protein level analysis</td></tr>
+            <tr><td>id</td><td>xs:nonNegativeInteger</td><td>&nbsp;</td><td>nunique identifier to analysis_summary element</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
@@ -1759,85 +825,34 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="annotation">annotation</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>protein_description</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>ipi_name</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>refseq_name</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>swissprot_name</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>ensembl_name</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>trembl_name</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>locus_link_name</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>flybase</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>protein_description</td><td>xs:string</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>ipi_name</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>refseq_name</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>swissprot_name</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>ensembl_name</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>trembl_name</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>locus_link_name</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>flybase</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
@@ -1846,64 +861,31 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="indistinguishable_protein">indistinguishable_protein</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">other protein sharing corresponding peptides
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>protein_name</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>protein_name</td><td>xs:string</td><td>required</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Subelement Name</th>
-                    <th>min</th>
-                    <th>max</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td><a href="#parameter">parameter</a></td>
-                    <td>0</td>
-                    <td>unlim</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td><a href="#annotation">annotation</a></td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>protein description</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Subelement Name</th><th>min</th><th>max</th><th>Definition</th></tr>
+            <tr><td><a href="#parameter">parameter</a></td><td>0</td><td>unlim</td><td>&nbsp;</td></tr>
+            <tr><td><a href="#annotation">annotation</a></td><td>1</td><td>1</td><td>protein description</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
@@ -1919,14 +901,12 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="parameter">parameter</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
@@ -1938,14 +918,12 @@
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
@@ -1954,85 +932,34 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="annotation">annotation</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">protein description
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>protein_description</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>description</td>
-                </tr>
-                <tr>
-                    <td>ipi_name</td>
-                    <td>xs:IDREF</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>refseq_name</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>swissprot_name</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>ensembl_name</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>trembl_name</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>locus_link_name</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>flybase</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>protein_description</td><td>xs:string</td><td>required</td><td>description</td></tr>
+            <tr><td>ipi_name</td><td>xs:IDREF</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>refseq_name</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>swissprot_name</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>ensembl_name</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>trembl_name</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>locus_link_name</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>flybase</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
@@ -2046,176 +973,49 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="peptide">peptide</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>peptide_sequence</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>unmodified aa sequence</td>
-                </tr>
-                <tr>
-                    <td>charge</td>
-                    <td>xs:positiveInteger</td>
-                    <td>required</td>
-                    <td>precursor ion charge</td>
-                </tr>
-                <tr>
-                    <td>initial_probability</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>precursor ion charge</td>
-                </tr>
-                <tr>
-                    <td>nsp_adjusted_probability</td>
-                    <td>xs:double</td>
-                    <td>optional</td>
-                    <td>after nsp adjustment
-                        <
-                    </td>
-                </tr>
-                <tr>
-                    <td>ni_adjusted_probability</td>
-                    <td>xs:double</td>
-                    <td>optional</td>
-                    <td>after ni adjustmen</td>
-                </tr>
-                <tr>
-                    <td>exp_sibling_ion_instances</td>
-                    <td>xs:double</td>
-                    <td>optional</td>
-                    <td>expected sibling ion instances</td>
-                </tr>
-                <tr>
-                    <td>exp_sibling_ion_bin</td>
-                    <td>xs:double</td>
-                    <td>optional</td>
-                    <td>expected sibling ion bin</td>
-                </tr>
-                <tr>
-                    <td>exp_tot_instances</td>
-                    <td>xs:double</td>
-                    <td>optional</td>
-                    <td>expected total instances</td>
-                </tr>
-                <tr>
-                    <td>peptide_group_designator</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>link to spectra with other precursor ion charges assigned to same peptide</td>
-                </tr>
-                <tr>
-                    <td>weight</td>
-                    <td>xs:double</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>is_nondegenerate_evidence</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>confidence that peptide corresponds with this protein (rather than others in which it occurs)
-                    </td>
-                </tr>
-                <tr>
-                    <td>n_enzymatic_termini</td>
-                    <td>xs:nonNegativeInteger</td>
-                    <td>required</td>
-                    <td>number of termini consistent with proteolytic cleavage</td>
-                </tr>
-                <tr>
-                    <td>n_sibling_peptides</td>
-                    <td>xs:double</td>
-                    <td>&nbsp;</td>
-                    <td>estimated number of sibling peptides (other identified peptides corresponding to same protein)
-                    </td>
-                </tr>
-                <tr>
-                    <td>n_sibling_peptides_bin</td>
-                    <td>xs:integer</td>
-                    <td>&nbsp;</td>
-                    <td>discretized nsp value</td>
-                </tr>
-                <tr>
-                    <td>n_instances</td>
-                    <td>xs:integer</td>
-                    <td>required</td>
-                    <td>number of times peptide assigned to spectrum of precursor ion charge in dataset</td>
-                </tr>
-                <tr>
-                    <td>calc_neutral_pep_mass</td>
-                    <td>xs:double</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>is_contributing_evidence</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>peptide_sequence</td><td>xs:string</td><td>required</td><td>unmodified aa sequence</td></tr>
+            <tr><td>charge</td><td>xs:positiveInteger</td><td>required</td><td>precursor ion charge</td></tr>
+            <tr><td>initial_probability</td><td>xs:double</td><td>required</td><td>precursor ion charge</td></tr>
+            <tr><td>nsp_adjusted_probability</td><td>xs:double</td><td>optional</td><td>after nsp adjustment<</td></tr>
+            <tr><td>ni_adjusted_probability</td><td>xs:double</td><td>optional</td><td>after ni adjustmen</td></tr>
+            <tr><td>exp_sibling_ion_instances</td><td>xs:double</td><td>optional</td><td>expected sibling ion instances</td></tr>
+            <tr><td>exp_sibling_ion_bin</td><td>xs:double</td><td>optional</td><td>expected sibling ion bin</td></tr>
+            <tr><td>exp_tot_instances</td><td>xs:double</td><td>optional</td><td>expected total instances</td></tr>
+            <tr><td>peptide_group_designator</td><td>xs:string</td><td>&nbsp;</td><td>link to spectra with other precursor ion charges assigned to same peptide</td></tr>
+            <tr><td>weight</td><td>xs:double</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>is_nondegenerate_evidence</td><td>xs:string</td><td>required</td><td>confidence that peptide corresponds with this protein (rather than others in which it occurs)</td></tr>
+            <tr><td>n_enzymatic_termini</td><td>xs:nonNegativeInteger</td><td>required</td><td>number of termini consistent with proteolytic cleavage</td></tr>
+            <tr><td>n_sibling_peptides</td><td>xs:double</td><td>&nbsp;</td><td>estimated number of sibling peptides (other identified peptides corresponding to same protein)</td></tr>
+            <tr><td>n_sibling_peptides_bin</td><td>xs:integer</td><td>&nbsp;</td><td>discretized nsp value</td></tr>
+            <tr><td>n_instances</td><td>xs:integer</td><td>required</td><td>number of times peptide assigned to spectrum of precursor ion charge in dataset</td></tr>
+            <tr><td>calc_neutral_pep_mass</td><td>xs:double</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>is_contributing_evidence</td><td>xs:string</td><td>required</td><td&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Subelement Name</th>
-                    <th>min</th>
-                    <th>max</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td><a href="#parameter">parameter</a></td>
-                    <td>0</td>
-                    <td>unlim</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td><a href="#modification_info">modification_info</a></td>
-                    <td>0</td>
-                    <td>unlim</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td><a href="#peptide_parent_protein">peptide_parent_protein</a></td>
-                    <td>0</td>
-                    <td>unlim</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td><a href="#indistinguishable_peptide">indistinguishable_peptide</a></td>
-                    <td>0</td>
-                    <td>unlim</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Subelement Name</th><th>min</th><th>max</th><th>Definition</th></tr>
+            <tr><td><a href="#parameter">parameter</a></td><td>0</td><td>unlim</td><td>&nbsp;</td></tr>
+            <tr><td><a href="#modification_info">modification_info</a></td><td>0</td><td>unlim</td><td>&nbsp;</td></tr>
+            <tr><td><a href="#peptide_parent_protein">peptide_parent_protein</a></td><td>0</td><td>unlim</td><td>&nbsp;</td></tr>
+            <tr><td><a href="#indistinguishable_peptide">indistinguishable_peptide</a></td><td>0</td><td>unlim</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
@@ -2230,70 +1030,32 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="modification_info">modification_info</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>mod_nterm_mass</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>mod_cterm_mass</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>modified_peptide</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>mod_nterm_mass</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>mod_cterm_mass</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>modified_peptide</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Subelement Name</th>
-                    <th>min</th>
-                    <th>max</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td><a href="#mod_aminoacid_mass">mod_aminoacid_mass</a></td>
-                    <td>0</td>
-                    <td>unlim</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Subelement Name</th><th>min</th><th>max</th><th>Definition</th></tr>
+            <tr><td><a href="#mod_aminoacid_mass">mod_aminoacid_mass</a></td><td>0</td><td>unlim</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
@@ -2309,48 +1071,28 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
+
 <h2>Element &lt;<a name="mod_aminoacid_mass">mod_aminoacid_mass</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>position</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>mass</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>position</td><td>xs:string</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>mass</td><td>xs:string</td><td>required</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
@@ -2359,43 +1101,27 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="peptide_parent_protein">peptide_parent_protein</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>protein_name</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>protein_name</td><td>xs:string</td><td>required</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
@@ -2409,58 +1135,30 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="indistinguishable_peptide">indistinguishable_peptide</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>peptide_sequence</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>peptide_sequence</td><td>xs:string</td><td>required</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Subelement Name</th>
-                    <th>min</th>
-                    <th>max</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td><a href="#modification_info">modification_info</a></td>
-                    <td>0</td>
-                    <td>unlim</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Subelement Name</th><th>min</th><th>max</th><th>Definition</th></tr>
+            <tr><td><a href="#modification_info">modification_info</a></td><td>0</td><td>unlim</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
@@ -2474,75 +1172,33 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
+
 <h2>Element &lt;<a name="modification_info">modification_info</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>mod_nterm_mass</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>mod_cterm_mass</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>modified_peptide</td>
-                    <td>xs:string</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>calc_neutral_pep_mass</td>
-                    <td>xs:double</td>
-                    <td>optional</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>mod_nterm_mass</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>mod_cterm_mass</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>modified_peptide</td><td>xs:string</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>calc_neutral_pep_mass</td><td>xs:double</td><td>optional</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Subelement Name</th>
-                    <th>min</th>
-                    <th>max</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td><a href="#mod_aminoacid_mass">mod_aminoacid_mass</a></td>
-                    <td>0</td>
-                    <td>unlim</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Subelement Name</th><th>min</th><th>max</th><th>Definition</th></tr>
+            <tr><td><a href="#mod_aminoacid_mass">mod_aminoacid_mass</a></td><td>0</td><td>unlim</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
@@ -2553,52 +1209,32 @@
     <tr>
         <td class="zero"><b>Example Context:</b></td>
         <td class="zero"><pre>&lt;modification_info mod_nterm_mass="43.0184" modified_peptide="n[43]MDLQAAGAQAQGAAEPSR"&gt;
-    &lt;/modification_info&gt;
-    </pre>
+&lt;/modification_info&gt;
+</pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
+
 <h2>Element &lt;<a name="mod_aminoacid_mass">mod_aminoacid_mass</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>position</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>mass</td>
-                    <td>xs:stringF</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>position</td><td>xs:string</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>mass</td><td>xs:stringF</td><td>required</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
@@ -2607,58 +1243,30 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="nsp_information">nsp_information</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">learned distributions of estimated number of sibling peptides
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>neighboring_bin_smoothing</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>neighboring_bin_smoothing</td><td>xs:string</td><td>required</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Subelement Name</th>
-                    <th>min</th>
-                    <th>max</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td><a href="#nsp_distribution">nsp_distribution</a></td>
-                    <td>1</td>
-                    <td>unlim</td>
-                    <td>histogram slice of estimated number of sibling peptides</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Subelement Name</th><th>min</th><th>max</th><th>Definition</th></tr>
+            <tr><td><a href="#nsp_distribution">nsp_distribution</a></td><td>1</td><td>unlim</td><td>histogram slice of estimated number of sibling peptides</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
@@ -2680,91 +1288,35 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="nsp_distribution">nsp_distribution</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">histogram slice of estimated number of sibling peptides
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>bin_no</td>
-                    <td>xs:integer</td>
-                    <td>required</td>
-                    <td>discretized bin number</td>
-                </tr>
-                <tr>
-                    <td>nsp_lower_bound_incl</td>
-                    <td>xs:double</td>
-                    <td>optional</td>
-                    <td>lower bound nsp value (inclusive)</td>
-                </tr>
-                <tr>
-                    <td>nsp_upper_bound_excl</td>
-                    <td>xs:string</td>
-                    <td>optional</td>
-                    <td>upper bound nsp value (exclusive)</td>
-                </tr>
-                <tr>
-                    <td>nsp_lower_bound_excl</td>
-                    <td>xs:double</td>
-                    <td>optional</td>
-                    <td>lower bound nsp value (exclusive)</td>
-                </tr>
-                <tr>
-                    <td>nsp_upper_bound_incl</td>
-                    <td>xs:string</td>
-                    <td>optional</td>
-                    <td>upper bound nsp value (inclusive</td>
-                </tr>
-                <tr>
-                    <td>pos_freq</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>fraction of correct peptides in bin</td>
-                </tr>
-                <tr>
-                    <td>neg_freq</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>fraction of incorrect peptides in bin</td>
-                </tr>
-                <tr>
-                    <td>pos_to_neg_ratio</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>fraction of correct / fraction of incorrect</td>
-                </tr>
-                <tr>
-                    <td>alt_pos_to_neg_ratio</td>
-                    <td>xs:double</td>
-                    <td>&nbsp;</td>
-                    <td>pos_to_neg_ratio of preceding bin (if greater than that of current bin)</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>bin_no</td><td>xs:integer</td><td>required</td><td>discretized bin number</td></tr>
+            <tr><td>nsp_lower_bound_incl</td><td>xs:double</td><td>optional</td><td>lower bound nsp value (inclusive)</td></tr>
+            <tr><td>nsp_upper_bound_excl</td><td>xs:string</td><td>optional</td><td>upper bound nsp value (exclusive)</td></tr>
+            <tr><td>nsp_lower_bound_excl</td><td>xs:double</td><td>optional</td><td>lower bound nsp value (exclusive)</td></tr>
+            <tr><td>nsp_upper_bound_incl</td><td>xs:string</td><td>optional</td><td>upper bound nsp value (inclusive</td></tr>
+            <tr><td>pos_freq</td><td>xs:double</td><td>required</td><td>fraction of correct peptides in bin</td></tr>
+            <tr><td>neg_freq</td><td>xs:double</td><td>required</td><td>fraction of incorrect peptides in bin</td></tr>
+            <tr><td>pos_to_neg_ratio</td><td>xs:double</td><td>required</td><td>fraction of correct / fraction of incorrect</td></tr>
+            <tr><td>alt_pos_to_neg_ratio</td><td>xs:double</td><td>&nbsp;</td><td>pos_to_neg_ratio of preceding bin (if greater than that of current bin)</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
@@ -2780,58 +1332,30 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="ni_information">ni_information</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">learned distributions of estimated number of peptide instances ("number of instances")
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>neighboring_bin_smoothing</td>
-                    <td>xs:string</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>neighboring_bin_smoothing</td><td>xs:string</td><td>required</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Subelement Name</th>
-                    <th>min</th>
-                    <th>max</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td><a href="#ni_distribution">ni_distribution</a></td>
-                    <td>1</td>
-                    <td>unlim</td>
-                    <td>histogram slice of estimated number of sibling peptides</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Subelement Name</th><th>min</th><th>max</th><th>Definition</th></tr>
+            <tr><td><a href="#ni_distribution">ni_distribution</a></td><td>1</td><td>unlim</td><td>histogram slice of estimated number of sibling peptides</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
@@ -2846,91 +1370,35 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="ni_distribution">ni_distribution</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">histogram slice of estimated number of sibling peptides
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>bin_no</td>
-                    <td>xs:integer</td>
-                    <td>required</td>
-                    <td>discretized bin number</td>
-                </tr>
-                <tr>
-                    <td>ni_lower_bound_incl</td>
-                    <td>xs:double</td>
-                    <td>optional</td>
-                    <td>lower bound nsp value (inclusive)</td>
-                </tr>
-                <tr>
-                    <td>ni_upper_bound_excl</td>
-                    <td>xs:string</td>
-                    <td>optional</td>
-                    <td>upper bound nsp value (exclusive)</td>
-                </tr>
-                <tr>
-                    <td>ni_lower_bound_excl</td>
-                    <td>xs:double</td>
-                    <td>optional</td>
-                    <td>lower bound nsp value (exclusive)</td>
-                </tr>
-                <tr>
-                    <td>ni_upper_bound_incl</td>
-                    <td>xs:string</td>
-                    <td>optional</td>
-                    <td>upper bound nsp value (inclusive)</td>
-                </tr>
-                <tr>
-                    <td>pos_freq</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>fraction of correct peptides in bin</td>
-                </tr>
-                <tr>
-                    <td>neg_freq</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>fraction of incorrect peptides in bin</td>
-                </tr>
-                <tr>
-                    <td>pos_to_neg_ratio</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>fraction of correct / fraction of incorrect</td>
-                </tr>
-                <tr>
-                    <td>alt_pos_to_neg_ratio</td>
-                    <td>xs:double</td>
-                    <td>&nbsp;</td>
-                    <td>pos_to_neg_ratio of preceding bin (if greater than that of current bin)</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>bin_no</td><td>xs:integer</td><td>required</td><td>discretized bin number</td></tr>
+            <tr><td>ni_lower_bound_incl</td><td>xs:double</td><td>optional</td><td>lower bound nsp value (inclusive)</td></tr>
+            <tr><td>ni_upper_bound_excl</td><td>xs:string</td><td>optional</td><td>upper bound nsp value (exclusive)</td></tr>
+            <tr><td>ni_lower_bound_excl</td><td>xs:double</td><td>optional</td><td>lower bound nsp value (exclusive)</td></tr>
+            <tr><td>ni_upper_bound_incl</td><td>xs:string</td><td>optional</td><td>upper bound nsp value (inclusive)</td></tr>
+            <tr><td>pos_freq</td><td>xs:double</td><td>required</td><td>fraction of correct peptides in bin</td></tr>
+            <tr><td>neg_freq</td><td>xs:double</td><td>required</td><td>fraction of incorrect peptides in bin</td></tr>
+            <tr><td>pos_to_neg_ratio</td><td>xs:double</td><td>required</td><td>fraction of correct / fraction of incorrect</td></tr>
+            <tr><td>alt_pos_to_neg_ratio</td><td>xs:double</td><td>&nbsp;</td><td>pos_to_neg_ratio of preceding bin (if greater than that of current bin)</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
@@ -2939,67 +1407,31 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="protein_summary_data_filter">protein_summary_data_filter</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">predicted error/sensitivity for filtering at minimum probability
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>min_probability</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>filter setting</td>
-                </tr>
-                <tr>
-                    <td>sensitivity</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>predicted sensitivity (fraction of correct results passing filter)</td>
-                </tr>
-                <tr>
-                    <td>false_positive_error_rate</td>
-                    <td>xs:double</td>
-                    <td>required</td>
-                    <td>predicted error rate (fraction of results passing filter than are incorrect)</td>
-                </tr>
-                <tr>
-                    <td>predicted_num_correct</td>
-                    <td>xs:double</td>
-                    <td>&nbsp;</td>
-                    <td>predicted number of correct results passing filter</td>
-                </tr>
-                <tr>
-                    <td>predicted_num_incorrect</td>
-                    <td>xs:double</td>
-                    <td>&nbsp;</td>
-                    <td>predicted number of incorrect results passing filter</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>min_probability</td><td>xs:double</td><td>required</td><td>filter setting</td></tr>
+            <tr><td>sensitivity</td><td>xs:double</td><td>required</td><td>predicted sensitivity (fraction of correct results passing filter)</td></tr>
+            <tr><td>false_positive_error_rate</td><td>xs:double</td><td>required</td><td>predicted error rate (fraction of results passing filter than are incorrect)</td></tr>
+            <tr><td>predicted_num_correct</td><td>xs:double</td><td>&nbsp;</td><td>predicted number of correct results passing filter</td></tr>
+            <tr><td>predicted_num_incorrect</td><td>xs:double</td><td>&nbsp;</td><td>predicted number of incorrect results passing filter</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
@@ -3014,55 +1446,29 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="intensity">intensity</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>mz</td>
-                    <td>xs:float</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>ratio</td>
-                    <td>xs:float</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>error</td>
-                    <td>xs:float</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>mz</td><td>xs:float</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>ratio</td><td>xs:float</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>error</td><td>xs:float</td><td>required</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
@@ -3071,65 +1477,41 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="fragment_masses">fragment_masses</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>channel</td>
-                    <td>positiveInt</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>mz</td>
-                    <td>xs:float</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>channel</td><td>positiveInt</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>mz</td><td>xs:float</td><td>required</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Example Context:</b></td>
-        <td class="zero"><pre>none</pre>
+        <td class="zero"><pre>none
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="isotopic_contributions">isotopic_contributions</a>&gt;</h2>
 
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
@@ -3141,23 +1523,10 @@
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Subelement Name</th>
-                    <th>min</th>
-                    <th>max</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td><a href="#contributing_channel">contributing_channel</a></td>
-                    <td>1</td>
-                    <td>unlim</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Subelement Name</th><th>min</th><th>max</th><th>Definition</th></tr>
+            <tr><td><a href="#contributing_channel">contributing_channel</a></td><td>1</td><td>unlim</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
@@ -3171,58 +1540,30 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="contributing_channel">contributing_channel</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>channel</td>
-                    <td>positiveInt</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>channel</td><td>positiveInt</td><td>required</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Subelement Name</th>
-                    <th>min</th>
-                    <th>max</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td><a href="#affected_channel">affected_channel</a></td>
-                    <td>1</td>
-                    <td>unlim</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Subelement Name</th><th>min</th><th>max</th><th>Definition</th></tr>
+            <tr><td><a href="#affected_channel">affected_channel</a></td><td>1</td><td>unlim</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
@@ -3236,49 +1577,28 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
 
 <h2>Element &lt;<a name="affected_channel">affected_channel</a>&gt;</h2>
+
 <table class="zero">
-    <tbody>
-    <tr>
+    <tbody><tr>
         <td class="zero"><b>Definition:</b></td>
         <td class="zero">none
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Attributes:</b></td>
-        <td class="zero">
-            <table border="1">
-                <tbody>
-                <tr>
-                    <th>Attribute Name</th>
-                    <th>Data Type</th>
-                    <th>Use</th>
-                    <th>Definition</th>
-                </tr>
-                <tr>
-                    <td>channel</td>
-                    <td>positiveInt</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>correction</td>
-                    <td>xs:float</td>
-                    <td>required</td>
-                    <td>&nbsp;</td>
-                </tr>
-                </tbody>
-            </table>
+        <td class="zero"><table border="1">
+            <tbody><tr><th>Attribute Name</th><th>Data Type</th><th>Use</th><th>Definition</th></tr>
+            <tr><td>channel</td><td>positiveInt</td><td>required</td><td>&nbsp;</td></tr>
+            <tr><td>correction</td><td>xs:float</td><td>required</td><td>&nbsp;</td></tr>
+            </tbody></table>
         </td>
     </tr>
     <tr>
         <td class="zero"><b>Subelements:</b></td>
-        <td class="zero">none
-            <br>
+        <td class="zero">none<br>
         </td>
     </tr>
     <tr>
@@ -3287,9 +1607,9 @@
 </pre>
         </td>
     </tr>
-    </tbody>
-</table>
-<br>
+    </tbody></table><br>
+
+
 </body>
 
 </html>
