@@ -1,0 +1,80 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 9pt;
+    background-color: #ffffff;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    background-color: #dddddd;
+}
+
+td {
+    border: 1px solid black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 9pt;
+    padding: 3px;
+    vertical-align: top;
+}
+
+table.zero {
+    border: 0px;
+    border-collapse: collapse;
+}
+
+td.zero {
+    border: 0px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 9pt;
+    padding: 3px;
+    vertical-align: top;
+}
+
+form {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 9pt
+}
+
+pre {
+    font-family: Courier New, Courier;
+    font-size: 8pt
+}
+
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14pt;
+    font-weight: bold
+}
+
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 5px;
+    border: 2px dotted black;
+    background-color: #ddddff;
+}
+
+h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12pt
+}
+
+h4 {
+    font-family: AHelvetica, rial, sans-serif;
+    font-size: 12pt
+}
+
+.popup {
+    COLOR: #9F141A;
+    CURSOR: help;
+    TEXT-DECORATION: none
+}
